@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) , url(/images/hero-bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "JetBrains Mono", monospace;
+}
+nav{
+    width: 100%;
+    height: 100px;
+  
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo a {
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: inherit;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.menu a:hover{
+   border: 1px solid #0977BE;
+   background: transparent;
+}
+
+a.join {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+} 
+.join a:hover{
+    border: 1px solid #0977BE;
+    background: transparent;
+} 
+.h-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    margin-bottom: 20px;
+    font-size: 3.5em;
+}
+.h-text a{
+    text-decoration: none;
+    background: #0977BE;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.8s;
+}
+.h-text a:hover {
+    background-color: #fff;
+    color: #0977BE;
+}
+
+.contact-form {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-form .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form .form-container input, 
+.contact-form .form-container textarea {
+    padding: 15px;
+    font-size: 16px;
+    font-family: "JetBrains Mono", monospace;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.contact-form .form-container input:focus, 
+.contact-form .form-container textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+}
+
+.contact-form .form-container button {
+    padding: 12px 20px;
+    background: #0977BE ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.contact-form .form-container button:hover {
+    background: #fff;
+    color: #0977BE;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.about-content 
+{
+position: absolute;
+top: 50%;
+left: 50%;
+max-width: 650px;
+transform: translate(-50%,-50%);
+text-align: center;
+color: #fff;
+line-height: 25px;
+}
+
+.about-content > p {
+margin-top: 25px;
+font-size: 18px;
+text-align: left;
+}
+
+.about-content > p > a {
+text-decoration: none;
+color: #0977BE;
+transition: 0.8s;
+}
+
+.about-content > p > a:hover {
+text-decoration: underline;
+color: #0977BE;
+}
+
+
+/* Footer styling */
+footer {
+font-family: "JetBrains Mono", monospace;
+text-align: center;
+padding: 10px;
+background-color: #0977BE;
+color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}

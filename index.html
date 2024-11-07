@@ -1,0 +1,56 @@
+Berikut adalah versi lengkap HTML dengan script JavaScript yang ditambahkan di bagian akhir, sebelum `</body>`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Akhir_Ahmad Mahdi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">To The Stars</a>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a href="index.html" class="join">Join</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <h1>Explore the Stars</h1>
+            <br>
+            <a href="index.html">Fly You Fool!</a>
+        </section>
+    </header>
+    <footer>
+        <p>
+            <a href="index.html">
+                Copyright &copy; 2024 Ahmad Mahadi
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        // Select the 'Join' link element by class name
+        const joinButton = document.querySelector('.join');
+
+        // Add an event listener for the 'click' event
+        joinButton.addEventListener('click', function(event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+            
+            // Display a popup alert
+            alert('Welcome To The Stars');
+        });
+    </script>
+</body>
+</html>
+```
+
